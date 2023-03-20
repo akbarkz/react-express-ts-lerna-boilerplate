@@ -1,0 +1,46 @@
+{
+	"name": "root",
+	"version": "1.0.0",
+	"private": true,
+	"author": "chan9yu <wry5533@gmail.com>",
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"dev": "yarn lerna run dev",
+		"build": "yarn lerna run build",
+		"commit": "yarn git-cz",
+		"prepare": "husky install",
+		"clean:modules": "./scripts/clean-node-modules.sh",
+		"update:dependencies": "./scripts/update-dependencies.sh"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
+		"@typescript-eslint/eslint-plugin": "^5.55.0",
+		"@typescript-eslint/parser": "^5.55.0",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^8.36.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.7.0",
+		"eslint-import-resolver-typescript": "^3.5.3",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.3",
+		"lerna": "^6.5.1",
+		"lint-staged": "^13.2.0",
+		"prettier": "^2.8.5"
+	}
+}
