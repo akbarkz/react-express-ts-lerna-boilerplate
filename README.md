@@ -25,15 +25,19 @@ React, Express, TypeScript를 Lerna로 구축한 모노레포하여 쉽게 시�
 
 ### 📖 사용 방법
 
-(root 위치에서)
+1. 프로젝트 클론
+```shell
+git clone https://github.com/chan9yu/react-express-typescript-lerna-boilerplate.git
+```
 
-1. 의존성 설치
+2. 의존성 설치
 
 ```shell
+# root 위치에서 시작합니다.
 yarn install
 ```
 
-2. 개발 서버 시작
+3. 개발 서버 시작
 
 ```shell
 # client와 server 패키지의 개발서버가 동시에 실행됩니다.
@@ -55,7 +59,7 @@ yarn dev
 
 #### common
 
-- lerna: ^6.5.1
+- lerna: v6.5.1
 - typescript: v5.0.2
 
 <br />
