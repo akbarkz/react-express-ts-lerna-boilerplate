@@ -26,6 +26,7 @@ React, Express, TypeScript를 Lerna로 구축한 모노레포하여 쉽게 시�
 ### 📖 사용 방법
 
 1. 프로젝트 클론
+
 ```shell
 git clone https://github.com/chan9yu/react-express-typescript-lerna-boilerplate.git
 ```
@@ -67,7 +68,7 @@ yarn dev
 ### 📌 참고
 
 - 객체지향문법을 공부하기 위해 server 패키지는 OOP로 작성하였으며 싱글턴 패턴을 사용하고 있습니다.
-- controller, service, router로 나누어 api를 작성할 수 있게 폴더구조를 작성하였습니다.
+- controller, service, model, router로 나누어 api를 작성할 수 있게 폴더구조를 작성하였습니다.
 
 <br />
 
