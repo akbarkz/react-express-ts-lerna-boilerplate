@@ -1,3 +1,3 @@
-import { TestRouter } from './TestRouter';
+import { TodoRouter } from './TodoRouter';
 
-export const testRouter = new TestRouter();
+export const testRouter = new TodoRouter();

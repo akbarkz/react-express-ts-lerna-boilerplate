@@ -7,7 +7,7 @@ import { PORT } from './config/env';
 import { UriConstant } from './constants/UriConstant';
 import { testRouter } from './routers';
 
-class App {
+export class App {
 	private static instance: App;
 
 	private port: string = PORT;
@@ -28,7 +28,7 @@ class App {
 	}
 
 	private setRoute() {
-		this.app.use(UriConstant.TEST_ROOT, testRouter.getRouter());
+		this.app.use(testRouter.getRouter());
 	}
 
 	private setMiddleware(): void {
@@ -45,10 +45,3 @@ class App {
 		});
 	}
 }
-
-function bootstrap() {
-	const server = App.getInstance();
-	server.listen();
-}
-
-bootstrap();
